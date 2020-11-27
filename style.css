@@ -115,6 +115,6 @@ text-shadow: 0 1px 3px #cce2fc;
     height: 50%;
 }
 
-#wizard1, #wizard2 {
-    margin-bottom: 50px;
+#wizardIMG img {
+    width: 14%;
 }
