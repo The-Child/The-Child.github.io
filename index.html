@@ -1,1 +1,97 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizard Battle</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a03fdcc63b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url("../Images/background.jpg");
+        background-repeat: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+    <div id="scoresDiv">
+      <div>
+        <h3>Wizard 1</h3>
+
+        <div id="scoreHP1Div">HP:<span id="scoreHP1"> 50</span></div>
+
+        <div id="scoreMP1Div">MP:<span id="scoreMP1"> 30</span></div>
+
+        <br />
+
+        <button onclick="AttackOnWater()">Attack</button>
+
+        <button onclick="MagicOnWater()">Magic</button>
+
+        <button onclick="AntiMagicOnWater()">Anti Magic</button>
+      </div>
+
+      <br />
+
+      <div>
+        <h3>Wizard 2</h3>
+
+        <div id="scoreHP2Div">HP:<span id="scoreHP2"> 50</span></div>
+
+        <div id="scoreMP2Div">MP:<span id="scoreMP2"> 30</span></div>
+
+        <br />
+
+        <button onclick="AttackOnFire()">Attack</button>
+
+        <button onclick="MagicOnFire()">Magic</button>
+
+        <button onclick="AntiMagicOnFire()">Anti Magic</button>
+      </div>
+    </div>
+    <br />
+
+    <div id="resetAndRules">
+      <button onclick="NewGame()">New Game</button>
+
+      <br />
+
+      <div>
+        <p>
+          Rules: Each player can press a button only once per round. Whenever
+          the HP of a player decreases to zero the player loses. Whenever the MP
+          of a player decreases to zero the his or her anti magic or magic
+          powers anymore. The Attack button inflicts 3-6 points of HP damage on
+          the other player. The Magic button inflicts 1-10 points of HP damage
+          on the other player and decreases the Magic power of own player with
+          3-6 points. The Anti Magic button decreases the magic power and the
+          health power of a sorcerer with 3-6 points and inflicts 10 points
+          Magic damage on the other player. The New Game button resets all the
+          points.
+        </p>
+      </div>
+
+      <br />
+
+      <button
+        id="music-btn"
+        type="button"
+        title="Epic Fantasy Songs"
+        onclick="music()"
+      >
+        <i class="fas fa-music"></i>
+      </button>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
