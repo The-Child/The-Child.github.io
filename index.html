@@ -25,7 +25,7 @@
     </style>
     <div id="scoresDiv">
       <div>
-        <h3>Wizard 1</h3>
+        <h2>Wizard 1</h2>
 
         <div id="scoreHP1Div">HP:<span id="scoreHP1"> 50</span></div>
 
@@ -33,17 +33,21 @@
 
         <br />
 
-        <button onclick="AttackOnWater()">Attack</button>
+        <div id="reverse">
+          <button class="btnOneAttack" onclick="AttackOnWater()">Attack</button>
 
-        <button onclick="MagicOnWater()">Magic</button>
+          <button class="btnOneMagic" onclick="MagicOnWater()">Magic</button>
 
-        <button onclick="AntiMagicOnWater()">Anti Magic</button>
+          <button class="btnOneAnti" onclick="AntiMagicOnWater()">
+            Anti Magic
+          </button>
+        </div>
       </div>
 
       <br />
 
       <div>
-        <h3>Wizard 2</h3>
+        <h2>Wizard 2</h2>
 
         <div id="scoreHP2Div">HP:<span id="scoreHP2"> 50</span></div>
 
@@ -51,17 +55,19 @@
 
         <br />
 
-        <button onclick="AttackOnFire()">Attack</button>
+        <button class="btnTwoAttack" onclick="AttackOnFire()">Attack</button>
 
-        <button onclick="MagicOnFire()">Magic</button>
+        <button class="btnTwoMagic" onclick="MagicOnFire()">Magic</button>
 
-        <button onclick="AntiMagicOnFire()">Anti Magic</button>
+        <button class="btnTwoAnti" onclick="AntiMagicOnFire()">
+          Anti Magic
+        </button>
       </div>
     </div>
     <br />
 
     <div id="resetAndRules">
-      <button onclick="NewGame()">New Game</button>
+      <button id="btnNewGame" onclick="NewGame()">New Game</button>
 
       <br />
 
@@ -83,7 +89,7 @@
       <br />
 
       <button
-        id="music-btn"
+        id="btnMusic"
         type="button"
         title="Epic Fantasy Songs"
         onclick="music()"
@@ -92,6 +98,10 @@
       </button>
     </div>
 
+    <div id="wizardIMG">
+      <img id="wizard-1" src="Images/wizard-1.png" alt="wizard-1" />
+      <img id="wizard-2" src="Images/wizard-2.png" alt="wizard-2" />
+    </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
